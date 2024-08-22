@@ -5,11 +5,13 @@ import Foundation
 import Hummingbird
 import Logging
 
+// snippet.processInfo
 let env = ProcessInfo.processInfo.environment
 
 let value = env["LOG_LEVEL"] ?? "trace"
 
 print(value)
+// snippet.end
 
 func buildApplication(
     configuration: ApplicationConfiguration
